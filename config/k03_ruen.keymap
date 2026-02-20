@@ -92,7 +92,7 @@
         en {
             bindings = <
 &kp PRINTSCREEN  &kp N1            &kp N2  &kp N3  &kp N4     &kp N5                                      &kp N6  &kp N7  &kp N8  &kp N9  &kp N0          &kp DOT
-&studio_unlock   &kp LEFT_ALT      &kp Q   &kp W   &kp E      &kp R                                       &kp T   &kp Y   &kp U   &kp I   &studio_unlock  &studio_unlock
+&studio_unlock   &kp RIGHT_ALT     &kp Q   &kp W   &kp E      &kp R                                       &kp T   &kp Y   &kp U   &kp I   &studio_unlock  &studio_unlock
 &kp TAB          &kp LEFT_SHIFT    &kp A   &kp S   &kp D      &kp F                                       &kp G   &kp H   &kp J   &kp K   &kp O           &studio_unlock
 &kp ESC          &kp LEFT_CONTROL  &kp Z   &kp X   &kp C      &kp V      &kp LEFT_GUI     &studio_unlock  &kp B   &kp N   &kp M   &kp L   &kp P           &studio_unlock
                                    &none   &none   &kp ENTER  &kp SPACE  &kp BACKSPACE    &mo 2           &mo 3   &none   &none   &none
@@ -141,11 +141,11 @@
 
         sym_en {
             bindings = <
-&none  &none  &none      &none              &none      &none                      &none  &none  &none  &none  &none  &none
-&none  &none  &kp NUBS   &kp RIGHT_BRACKET  &kp COMMA  &kp EQUAL                  &none  &none  &none  &none  &none  &none
-&none  &none  &kp FSLH   &kp LEFT_BRACKET   &kp DOT    &kp MINUS                  &none  &none  &none  &none  &none  &none
-&none  &none  &kp GRAVE  &kp SQT            &kp SEMI   &none      &none    &none  &none  &none  &none  &none  &none  &none
-              &none      &none              &none      &none      &none    &none  &none  &none  &none  &none
+&none  &none             &none          &none              &none      &none                      &none  &none  &none  &none  &none  &none
+&none  &kp RIGHT_ALT     &kp BACKSLASH  &kp RIGHT_BRACKET  &kp COMMA  &kp EQUAL                  &none  &none  &none  &none  &none  &none
+&none  &kp LEFT_SHIFT    &kp FSLH       &kp LEFT_BRACKET   &kp DOT    &kp MINUS                  &none  &none  &none  &none  &none  &none
+&none  &kp LEFT_CONTROL  &kp GRAVE      &kp SQT            &kp SEMI   &none      &none    &none  &none  &none  &none  &none  &none  &none
+                         &none          &none              &none      &none      &none    &none  &none  &none  &none  &none
             >;
 
             display-name = "Symbols";
