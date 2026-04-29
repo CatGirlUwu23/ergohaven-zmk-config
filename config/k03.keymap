@@ -14,16 +14,25 @@
         };
     };
 
+    macros {
+        mail: mail {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp T &kp I &kp T &kp O &kp V &kp M &kp I &kp H &kp A &kp I &kp L &kp N0 &kp N5 &kp AT &kp M &kp A &kp I &kp L &kp DOT &kp R &kp U>;
+            label = "MAIL";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
         base {
             bindings = <
-&kp GRAVE  &kp N1  &kp N2    &kp N3    &kp N4     &kp N5                          &kp N6  &kp N7     &kp N8     &kp N9    &kp N0    &kp BSPC
-&kp ESC    &kp Q   &kp W     &kp E     &kp R      &kp T                           &kp Y   &kp U      &kp I      &kp O     &kp P     &kp BSLH
-&kp TAB    &kp A   &kp S     &kp D     &kp F      &kp G                           &kp H   &kp J      &kp K      &kp L     &kp SEMI  &kp SQT
-&kp LSHFT  &kp Z   &kp X     &kp C     &kp V      &kp B   &kp LBKT     &kp RBKT   &kp N   &kp M      &kp COMMA  &kp DOT   &kp FSLH  &kp RSHFT
-                   &kp LGUI  &kp LALT  &kp LCTRL  &mo 1   &kp SPACE    &kp ENTER  &mo 2   &kp RCTRL  &kp RALT   &kp RGUI
+&kp PRINTSCREEN  &kp N1          &kp N2  &kp N3  &kp N4     &kp N5                                      &kp N6  &kp N7         &kp N8  &kp N9  &kp N0  &mail
+&studio_unlock   &kp LEFT_ALT    &kp Q   &kp W   &kp E      &kp R                                       &kp T   &kp Y          &kp U   &kp I   &none   &studio_unlock
+&kp TAB          &kp LEFT_SHIFT  &kp A   &kp S   &kp D      &kp F                                       &kp G   &kp H          &kp J   &kp K   &kp O   &studio_unlock
+&kp ESC          &kp LCTRL       &kp Z   &kp X   &kp C      &kp V      &kp LEFT_GUI     &studio_unlock  &kp B   &kp N          &kp M   &kp L   &kp P   &studio_unlock
+                                 &none   &none   &kp ENTER  &kp SPACE  &kp BACKSPACE    &mo 1           &mo 2   &kp RIGHT_ALT  &none   &none
             >;
 
             display-name = "Base";
@@ -38,11 +47,11 @@
 
         nav {
             bindings = <
-&kp F1  &kp F2  &kp F3        &kp F4    &kp F5         &kp F6                     &kp F7           &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
-&trans  &trans  &kp HOME      &kp UP    &kp END        &kp INS                    &kp PG_UP        &kp N7  &kp N8  &kp N9   &trans   &trans
-&trans  &trans  &kp LEFT      &kp DOWN  &kp RIGHT      &kp RET                    &kp PG_DN        &kp N4  &kp N5  &kp N6   &trans   &trans
-&trans  &trans  &kp LC(LEFT)  &kp CAPS  &kp LC(RIGHT)  &kp DEL  &trans    &trans  &kp PRINTSCREEN  &kp N1  &kp N2  &kp N3   &trans   &trans
-                &trans        &trans    &trans         &trans   &trans    &trans  &mo 3            &trans  &kp N0  &trans
+&kp F1  &kp F2  &kp F3        &kp F4    &kp F5         &kp F6                   &kp F7           &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
+&none   &none   &kp HOME      &kp UP    &kp END        &kp INS                  &kp PG_UP        &kp N7  &kp N8  &kp N9   &none    &none
+&none   &none   &kp LEFT      &kp DOWN  &kp RIGHT      &kp RET                  &kp PG_DN        &kp N4  &kp N5  &kp N6   &none    &none
+&none   &none   &kp LC(LEFT)  &kp CAPS  &kp LC(RIGHT)  &kp DEL  &none    &none  &kp PRINTSCREEN  &kp N1  &kp N2  &kp N3   &none    &none
+                &none         &none     &none          &none    &none    &none  &mo 3            &none   &kp N0  &none
             >;
 
             display-name = "Nav";
@@ -50,11 +59,11 @@
 
         sym {
             bindings = <
-&trans  &trans    &kp AT    &kp DLLR   &kp HASH  &trans                       &trans     &trans    &kp CARET  &trans    &trans    &trans
-&trans  &trans    &kp LT    &kp EQUAL  &kp GT    &kp GRAVE                    &trans     &kp LBKT  &kp UNDER  &kp RBKT  &trans    &trans
-&trans  &kp BSLH  &kp LPAR  &kp MINUS  &kp RPAR  &kp PLUS                     &kp PRCNT  &kp LBRC  &kp SEMI   &kp RBRC  &kp EXCL  &trans
-&trans  &trans    &kp STAR  &kp COLON  &kp FSLH  &trans     &trans    &trans  &trans     &kp PIPE  &kp TILDE  &kp AMPS  &trans    &trans
-                  &trans    &trans     &trans    &mo 3      &trans    &trans  &trans     &trans    &trans     &trans
+&none  &none           &none          &none              &none      &none                              &none  &none  &none  &none  &none  &none
+&none  &kp LEFT_ALT    &kp BACKSLASH  &kp RIGHT_BRACKET  &kp COMMA  &kp EQUAL                          &none  &none  &none  &none  &none  &none
+&none  &kp LEFT_SHIFT  &kp FSLH       &kp LEFT_BRACKET   &kp DOT    &kp MINUS                          &none  &none  &none  &none  &none  &none
+&none  &kp LCTRL       &kp GRAVE      &kp SQT            &kp COLON  &none      &none            &none  &none  &none  &none  &none  &none  &none
+                       &none          &none              &kp ENTER  &kp SPACE  &kp BACKSPACE    &mo 3  &none  &none  &none  &none
             >;
 
             display-name = "Symbols";
