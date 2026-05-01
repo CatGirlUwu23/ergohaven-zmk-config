@@ -30,7 +30,7 @@
         base {
             bindings = <
 &kp PRINTSCREEN  &kp N1          &kp N2  &kp N3  &kp N4     &kp N5                                      &kp N6  &kp N7         &kp N8  &kp N9  &kp N0  &mail
-&studio_unlock   &kp LEFT_ALT    &kp Q   &kp W   &kp E      &kp R                                       &kp T   &kp Y          &kp U   &kp I   &tog 0  &studio_unlock
+&studio_unlock   &kp LEFT_ALT    &kp Q   &kp W   &kp E      &kp R                                       &kp T   &kp Y          &kp U   &kp I   &tog 4  &studio_unlock
 &kp TAB          &kp LEFT_SHIFT  &kp A   &kp S   &kp D      &kp F                                       &kp G   &kp H          &kp J   &kp K   &kp O   &studio_unlock
 &kp ESC          &kp LCTRL       &kp Z   &kp X   &kp C      &kp V      &kp LEFT_GUI     &studio_unlock  &kp B   &kp N          &kp M   &kp L   &kp P   &studio_unlock
                                  &none   &none   &kp ENTER  &kp SPACE  &kp BACKSPACE    &mo 1           &mo 2   &kp RIGHT_ALT  &none   &none
@@ -86,7 +86,7 @@
             display-name = "Base";
             bindings = <
 &kp PRINTSCREEN  &kp N1          &kp N2  &kp N3  &kp N4     &kp N5                                      &kp N6    &kp N7         &kp N8     &kp N9  &kp N0  &mail
-&studio_unlock   &kp LEFT_ALT    &kp Q   &kp W   &kp E      &kp R                                       &none     &none          &none      &none   &tog 0  &studio_unlock
+&studio_unlock   &kp LEFT_ALT    &kp Q   &kp W   &kp E      &kp R                                       &none     &none          &none      &none   &tog 4  &studio_unlock
 &kp TAB          &kp LEFT_SHIFT  &kp A   &kp S   &kp D      &kp F                                       &mkp MB4  &mkp LCLK      &mkp RCLK  &none   &none   &studio_unlock
 &kp ESC          &kp LCTRL       &kp Z   &kp X   &kp C      &kp V      &kp LEFT_GUI     &studio_unlock  &mkp MB5  &mkp MCLK      &none      &none   &none   &studio_unlock
                                  &none   &none   &kp ENTER  &kp SPACE  &kp BACKSPACE    &mo 1           &mo 2     &kp RIGHT_ALT  &none      &none
