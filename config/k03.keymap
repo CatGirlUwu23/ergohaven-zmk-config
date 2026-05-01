@@ -60,11 +60,11 @@
 
         sym {
             bindings = <
-&none  &none           &none          &none              &none      &none                              &none  &none  &none  &none  &none  &none
-&none  &kp LEFT_ALT    &kp BACKSLASH  &kp RIGHT_BRACKET  &kp COMMA  &kp EQUAL                          &none  &none  &none  &none  &none  &none
-&none  &kp LEFT_SHIFT  &kp FSLH       &kp LEFT_BRACKET   &kp DOT    &kp MINUS                          &none  &none  &none  &none  &none  &none
-&none  &kp LCTRL       &kp GRAVE      &kp SQT            &kp COLON  &none      &none            &none  &none  &none  &none  &none  &none  &none
-                       &none          &none              &kp ENTER  &kp SPACE  &kp BACKSPACE    &mo 3  &none  &none  &none  &none
+&none  &none           &none          &none              &none      &none                              &none  &none          &none  &none  &none  &none
+&none  &kp LEFT_ALT    &kp BACKSLASH  &kp RIGHT_BRACKET  &kp COMMA  &kp EQUAL                          &none  &none          &none  &none  &none  &none
+&none  &kp LEFT_SHIFT  &kp FSLH       &kp LEFT_BRACKET   &kp DOT    &kp MINUS                          &none  &none          &none  &none  &none  &none
+&none  &kp LCTRL       &kp GRAVE      &kp SQT            &kp COLON  &none      &none            &none  &none  &none          &none  &none  &none  &none
+                       &none          &none              &kp ENTER  &kp SPACE  &kp BACKSPACE    &mo 3  &none  &kp RIGHT_ALT  &none  &none
             >;
 
             display-name = "Symbols";
