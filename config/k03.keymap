@@ -29,14 +29,45 @@
 
         base {
             bindings = <
-&kp PRINTSCREEN  &kp N1          &kp N2  &kp N3  &kp N4     &kp N5                                      &kp N6  &kp N7         &kp N8  &kp N9  &kp N0  &mail
-&studio_unlock   &kp LEFT_ALT    &kp Q   &kp W   &kp E      &kp R                                       &kp T   &kp Y          &kp U   &kp I   &tog 4  &studio_unlock
-&kp TAB          &kp LEFT_SHIFT  &kp A   &kp S   &kp D      &kp F                                       &kp G   &kp H          &kp J   &kp K   &kp O   &studio_unlock
-&kp ESC          &kp LCTRL       &kp Z   &kp X   &kp C      &kp V      &kp LEFT_GUI     &studio_unlock  &kp B   &kp N          &kp M   &kp L   &kp P   &studio_unlock
-                                 &none   &none   &kp ENTER  &kp SPACE  &kp BACKSPACE    &mo 1           &mo 2   &kp RIGHT_ALT  &none   &none
+&kp PRINTSCREEN  &kp N1          &kp N2  &kp N3  &kp N4         &kp N5                                      &kp N6  &kp N7     &kp N8  &kp N9  &kp N0  &mail
+&studio_unlock   &kp LEFT_ALT    &kp Q   &kp W   &kp E          &kp R                                       &kp T   &kp Y      &kp U   &kp I   &tog 2  &studio_unlock
+&kp TAB          &kp LEFT_SHIFT  &kp A   &kp S   &kp D          &kp F                                       &kp G   &kp H      &kp J   &kp K   &kp O   &studio_unlock
+&kp ESC          &kp LCTRL       &kp Z   &kp X   &kp C          &kp V      &kp LEFT_GUI     &studio_unlock  &kp B   &kp N      &kp M   &kp L   &kp P   &studio_unlock
+                                 &none   &none   &kp RIGHT_ALT  &kp SPACE  &kp BACKSPACE    &mo 3           &mo 1   &kp ENTER  &none   &none
             >;
 
             display-name = "Base";
+            sensor-bindings =
+                <&enc_vol>,
+                <&enc_vol>,
+                <&enc_vol>,
+                <&enc_vol>,
+                <&enc_vol>,
+                <&enc_vol>;
+        };
+
+        sym {
+            bindings = <
+&none  &none           &none          &none              &none          &none                              &none  &none      &none  &none  &none  &none
+&none  &kp LEFT_ALT    &kp BACKSLASH  &kp RIGHT_BRACKET  &kp COMMA      &kp EQUAL                          &none  &none      &none  &none  &none  &none
+&none  &kp LEFT_SHIFT  &kp FSLH       &kp LEFT_BRACKET   &kp DOT        &kp MINUS                          &none  &none      &none  &none  &none  &none
+&none  &kp LCTRL       &kp GRAVE      &kp SQT            &kp COLON      &none      &none            &none  &none  &none      &none  &none  &none  &none
+                       &none          &none              &kp RIGHT_ALT  &kp SPACE  &kp BACKSPACE    &mo 4  &none  &kp ENTER  &none  &none
+            >;
+
+            display-name = "Symbols";
+        };
+
+        layer_4 {
+            display-name = "Base";
+            bindings = <
+&kp PRINTSCREEN  &kp N1          &kp N2  &kp N3  &kp N4         &kp N5                                      &kp N6    &kp N7     &kp N8     &kp N9  &kp N0  &mail
+&studio_unlock   &kp LEFT_ALT    &kp Q   &kp W   &kp E          &kp R                                       &none     &none      &none      &none   &tog 2  &studio_unlock
+&kp TAB          &kp LEFT_SHIFT  &kp A   &kp S   &kp D          &kp F                                       &mkp MB4  &mkp LCLK  &mkp RCLK  &none   &none   &studio_unlock
+&kp ESC          &kp LCTRL       &kp Z   &kp X   &kp C          &kp V      &kp LEFT_GUI     &studio_unlock  &mkp MB5  &mkp MCLK  &none      &none   &none   &studio_unlock
+                                 &none   &none   &kp RIGHT_ALT  &kp SPACE  &kp BACKSPACE    &mo 3           &mo 1     &kp ENTER  &none      &none
+            >;
+
             sensor-bindings =
                 <&enc_vol>,
                 <&enc_vol>,
@@ -49,25 +80,13 @@
         nav {
             bindings = <
 &kp F1  &kp F2  &kp F3        &kp F4    &kp F5         &kp F6                   &kp F7           &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
-&none   &none   &kp HOME      &kp UP    &kp END        &kp INS                  &kp PG_UP        &kp N7  &kp N8  &kp N9   &none    &none
+&none   &none   &kp HOME      &kp UP    &kp END        &kp INS                  &kp PG_UP        &kp N1  &kp N2  &kp N3   &none    &none
 &none   &none   &kp LEFT      &kp DOWN  &kp RIGHT      &kp RET                  &kp PG_DN        &kp N4  &kp N5  &kp N6   &none    &none
-&none   &none   &kp LC(LEFT)  &kp CAPS  &kp LC(RIGHT)  &kp DEL  &none    &none  &kp PRINTSCREEN  &kp N1  &kp N2  &kp N3   &none    &none
-                &none         &none     &none          &none    &none    &none  &mo 3            &none   &kp N0  &none
+&none   &none   &kp LC(LEFT)  &kp CAPS  &kp LC(RIGHT)  &kp DEL  &none    &none  &kp PRINTSCREEN  &kp N7  &kp N8  &kp N9   &none    &none
+                &none         &none     &none          &none    &none    &none  &mo 4            &none   &kp N0  &none
             >;
 
             display-name = "Nav";
-        };
-
-        sym {
-            bindings = <
-&none  &none           &none          &none              &none      &none                              &none  &none          &none  &none  &none  &none
-&none  &kp LEFT_ALT    &kp BACKSLASH  &kp RIGHT_BRACKET  &kp COMMA  &kp EQUAL                          &none  &none          &none  &none  &none  &none
-&none  &kp LEFT_SHIFT  &kp FSLH       &kp LEFT_BRACKET   &kp DOT    &kp MINUS                          &none  &none          &none  &none  &none  &none
-&none  &kp LCTRL       &kp GRAVE      &kp SQT            &kp COLON  &none      &none            &none  &none  &none          &none  &none  &none  &none
-                       &none          &none              &kp ENTER  &kp SPACE  &kp BACKSPACE    &mo 3  &none  &kp RIGHT_ALT  &none  &none
-            >;
-
-            display-name = "Symbols";
         };
 
         adj {
@@ -80,25 +99,6 @@
             >;
 
             display-name = "Adjust";
-        };
-
-        layer_4 {
-            display-name = "Base";
-            bindings = <
-&kp PRINTSCREEN  &kp N1          &kp N2  &kp N3  &kp N4     &kp N5                                      &kp N6    &kp N7         &kp N8     &kp N9  &kp N0  &mail
-&studio_unlock   &kp LEFT_ALT    &kp Q   &kp W   &kp E      &kp R                                       &none     &none          &none      &none   &tog 4  &studio_unlock
-&kp TAB          &kp LEFT_SHIFT  &kp A   &kp S   &kp D      &kp F                                       &mkp MB4  &mkp LCLK      &mkp RCLK  &none   &none   &studio_unlock
-&kp ESC          &kp LCTRL       &kp Z   &kp X   &kp C      &kp V      &kp LEFT_GUI     &studio_unlock  &mkp MB5  &mkp MCLK      &none      &none   &none   &studio_unlock
-                                 &none   &none   &kp ENTER  &kp SPACE  &kp BACKSPACE    &mo 1           &mo 2     &kp RIGHT_ALT  &none      &none
-            >;
-
-            sensor-bindings =
-                <&enc_vol>,
-                <&enc_vol>,
-                <&enc_vol>,
-                <&enc_vol>,
-                <&enc_vol>,
-                <&enc_vol>;
         };
     };
 };
