@@ -54,14 +54,100 @@
         };
     };
 
+    macros {
+        mail: mail {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp M &kp A &kp R &kp G &kp A &kp R &kp E &kp T &kp DOT &kp O &kp R &kp O &kp B &kp E &kp T &kp S &kp AT &kp G &kp M &kp A &kp I &kp L &kp DOT &kp C &kp O &kp M>;
+            label = "MAIL";
+        };
+
+        ps: ps {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp N2 &kp N0 &kp N2 &kp N6>;
+            label = "PS";
+        };
+
+        tire: tire {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <>;
+            label = "TIRE";
+        };
+
+        heart: heart {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LPAR &kp SPACE &kp SPACE &kp SPACE &kp RPAR>;
+            label = "HEART";
+        };
+
+        da: da {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <>;
+            label = "DA";
+        };
+
+        dA: dA {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <>;
+            label = "DA";
+        };
+
+        do: do {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <>;
+            label = "DO";
+        };
+
+        dO: dO {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <>;
+            label = "DO";
+        };
+
+        du: du {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <>;
+            label = "DU";
+        };
+
+        dU: dU {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <>;
+            label = "DU";
+        };
+
+        ds: ds {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <>;
+            label = "DS";
+        };
+
+        dS: dS {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <>;
+            label = "DS";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
         base {
             bindings = <
   &kp Q  &kp W  &kp E  &kp R           &kp T                                  &kp Y   &kp U          &kp I  &kp O  &kp P
-  &kp A  &kp S  &kp D  &kp F           &kp G                                  &kp H   &kp J          &kp K  &kp L  &none
-  &kp Z  &kp X  &kp C  &kp V           &kp B                                  &kp N   &kp M          &none  &none  &none
+  &kp A  &kp S  &kp D  &kp F           &kp G                                  &kp H   &kp J          &kp K  &kp L  &ds
+  &kp Z  &kp X  &kp C  &kp V           &kp B                                  &kp N   &kp M          &da    &do    &du
                        &kp LEFT_SHIFT  &tog 1  &kp SPACE    &kp LEFT_CONTROL  &tog 2  &kp BACKSPACE
             >;
 
@@ -70,10 +156,10 @@
 
         nav {
             bindings = <
-  &kp CAPSLOCK          &kp LEFT_ALT           &kp DELETE        &kp TAB         &kp ENTER                                     &kp GRAVE  &mkp LCLK       &mkp MCLK       &mkp RCLK        &kp LEFT_GUI
-  &kp LEFT_CONTROL      &kp LEFT_SHIFT         &kp LEFT          &kp UP          &kp RIGHT_ARROW                               &none      &mmv MOVE_LEFT  &mmv MOVE_UP    &mmv MOVE_RIGHT  &none
-  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACKET  &kp DOWN_ARROW  &kp RIGHT_BRACKET                             &none      &msc SCRL_UP    &mmv MOVE_DOWN  &msc SCRL_DOWN   &none
-                                                                 &kp LEFT_BRACE  &tog 1             &kp RIGHT_BRACE    &trans  &mo 3      &trans
+  &kp CAPSLOCK          &kp LEFT_ALT           &kp DELETE        &kp TAB         &kp ENTER                                        &kp GRAVE          &mkp LCLK       &mkp MCLK       &mkp RCLK        &kp LEFT_GUI
+  &kp LEFT_CONTROL      &kp LEFT_SHIFT         &kp LEFT          &kp UP          &kp RIGHT_ARROW                                  &kp DOUBLE_QUOTES  &mmv MOVE_LEFT  &mmv MOVE_UP    &mmv MOVE_RIGHT  &kp SEMICOLON
+  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACKET  &kp DOWN_ARROW  &kp RIGHT_BRACKET                                &kp APOSTROPHE     &msc SCRL_UP    &mmv MOVE_DOWN  &msc SCRL_DOWN   &kp COLON
+                                                                 &kp LEFT_BRACE  &tog 1             &kp RIGHT_BRACE    &kp COMMA  &mo 3              &kp PERIOD
             >;
 
             display-name = "Nav";
@@ -81,10 +167,10 @@
 
         sym {
             bindings = <
-  &kp LESS_THAN         &kp GREATER_THAN  &kp POUND   &none            &kp CARET                          &kp PERCENT   &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp EQUAL
-  &kp NON_US_BACKSLASH  &kp SLASH         &kp PIPE    &kp UNDERSCORE   &none                              &kp ASTERISK  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp PLUS
-  &kp TILDE             &kp AMPERSAND     &kp DOLLAR  &kp AT_SIGN      &none                              &none         &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp MINUS
-                                                      &kp EXCLAMATION  &mo 3      &kp QUESTION    &trans  &tog 2        &kp KP_NUMBER_0
+  &kp LESS_THAN         &kp GREATER_THAN  &kp POUND   &kp RU_NUMERO    &kp CARET                         &kp PERCENT   &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp EQUAL
+  &kp NON_US_BACKSLASH  &kp SLASH         &kp PIPE    &kp UNDERSCORE   &tire                             &kp ASTERISK  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp PLUS
+  &kp TILDE             &kp AMPERSAND     &kp DOLLAR  &kp AT_SIGN      &ps                               &heart        &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp MINUS
+                                                      &kp EXCLAMATION  &mo 3      &kp QUESTION    &mail  &tog 2        &kp KP_NUMBER_0
             >;
 
             display-name = "Symbols";
