@@ -44,12 +44,12 @@
         compatible = "zmk,combos";
 
         kha {
-            bindings = <&kp LBKT>;
+            bindings = <&kp RU_CYRILLIC_HA>;
             key-positions = <6 7>;
         };
 
         hrdsgn {
-            bindings = <&kp RBKT>;
+            bindings = <&kp RU_CYRILLIC_HARD_SIGN>;
             key-positions = <7 8>;
         };
     };
