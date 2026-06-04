@@ -74,27 +74,37 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = 
-                /* ⸜ — U+2E1C */
+                /* ⸜ */
                 <&kp LC(LS(U))>, <&kp N2>, <&kp E>, <&kp N1>, <&kp C>, <&kp SPACE>,
+                <&macro_wait 10>,
                 /* ( */
                 <&kp LPAR>,
-                /* ｡ — U+FF61 */
+                <&macro_wait 10>,
+                /* ｡ */
                 <&kp LC(LS(U))>, <&kp F>, <&kp F>, <&kp N6>, <&kp N1>, <&kp SPACE>,
-                /* ˃ — U+02C3 */
+                <&macro_wait 10>,
+                /* ˃ */
                 <&kp LC(LS(U))>, <&kp N0>, <&kp N2>, <&kp C>, <&kp N3>, <&kp SPACE>,
+                <&macro_wait 10>,
                 /* пробел */
                 <&kp SPACE>,
-                /* ᵕ — U+1D55 */
-                <&kp LC(LS(U))>, <&kp N1>, <&kp D>, <&kp N5>, <&kp N5>, <&kp SPACE>,
+                <&macro_wait 10>,
+                /* ᵕ — 5-значный символ, нужна пауза перед ним */
+                <&kp LC(LS(U))>, <&macro_wait 5>, <&kp N1>, <&kp D>, <&kp N5>, <&kp N5>, <&kp SPACE>,
+                <&macro_wait 10>,
                 /* пробел */
                 <&kp SPACE>,
-                /* ˂ — U+02C2 */
+                <&macro_wait 10>,
+                /* ˂ */
                 <&kp LC(LS(U))>, <&kp N0>, <&kp N2>, <&kp C>, <&kp N2>, <&kp SPACE>,
+                <&macro_wait 10>,
                 /* ) */
                 <&kp RPAR>,
-                /* ⸝ — U+2E1D */
-                <&kp LC(LS(U))>, <&kp U>, <&kp N2>, <&kp E>, <&kp N1>, <&kp D>, <&kp SPACE>,
-                /* ♡ — U+2661 */
+                <&macro_wait 10>,
+                /* ⸝ */
+                <&kp LC(LS(U))>, <&kp N2>, <&kp E>, <&kp N1>, <&kp D>, <&kp SPACE>,
+                <&macro_wait 10>,
+                /* ♡ */
                 <&kp LC(LS(U))>, <&kp N2>, <&kp N6>, <&kp N6>, <&kp N1>, <&kp SPACE>;
         };
     };
