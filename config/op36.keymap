@@ -62,74 +62,10 @@
             label = "MAIL";
         };
 
-        ps: ps {
+        test_macro: test_macro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp N2 &kp N0 &kp N2 &kp N6>;
-            label = "PS";
-        };
-
-        heart: heart {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LPAR &kp SPACE &kp SPACE &kp SPACE &kp RPAR>;
-            label = "HEART";
-        };
-
-        da: da {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <>;
-            label = "DA";
-        };
-
-        dA: dA {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <>;
-            label = "DA";
-        };
-
-        do: do {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <>;
-            label = "DO";
-        };
-
-        dO: dO {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <>;
-            label = "DO";
-        };
-
-        du: du {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <>;
-            label = "DU";
-        };
-
-        dU: dU {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <>;
-            label = "DU";
-        };
-
-        ds: ds {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <>;
-            label = "DS";
-        };
-
-        dS: dS {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <>;
-            label = "DS";
+            bindings = <&kp H>, <&kp E>, <&kp L>, <&kp L>, <&kp O>;
         };
     };
 
