@@ -67,27 +67,27 @@
             #binding-cells = <0>;
             bindings = 
                 /* ⸜ — U+2E1C */
-                <&kp LCTRL>, <&kp LSHIFT>, <&kp U>, <&kp N2>, <&kp E>, <&kp N1>, <&kp C>, <&kp SPACE>,
+                <&kp LC(LS(U))>, <&kp N2>, <&kp E>, <&kp N1>, <&kp C>, <&kp SPACE>,
                 /* ( */
                 <&kp LPAR>,
                 /* ｡ — U+FF61 */
-                <&kp LCTRL>, <&kp LSHIFT>, <&kp U>, <&kp F>, <&kp F>, <&kp N6>, <&kp N1>, <&kp SPACE>,
+                <&kp LC(LS(U))>, <&kp F>, <&kp F>, <&kp N6>, <&kp N1>, <&kp SPACE>,
                 /* ˃ — U+02C3 */
-                <&kp LCTRL>, <&kp LSHIFT>, <&kp U>, <&kp N0>, <&kp N2>, <&kp C>, <&kp N3>, <&kp SPACE>,
+                <&kp LC(LS(U))>, <&kp N0>, <&kp N2>, <&kp C>, <&kp N3>, <&kp SPACE>,
                 /* пробел */
                 <&kp SPACE>,
                 /* ᵕ — U+1D55 */
-                <&kp LCTRL>, <&kp LSHIFT>, <&kp U>, <&kp N1>, <&kp D>, <&kp N5>, <&kp N5>, <&kp SPACE>,
+                <&kp LC(LS(U))>, <&kp N1>, <&kp D>, <&kp N5>, <&kp N5>, <&kp SPACE>,
                 /* пробел */
                 <&kp SPACE>,
                 /* ˂ — U+02C2 */
-                <&kp LCTRL>, <&kp LSHIFT>, <&kp U>, <&kp N0>, <&kp N2>, <&kp C>, <&kp N2>, <&kp SPACE>,
+                <&kp LC(LS(U))>, <&kp N0>, <&kp N2>, <&kp C>, <&kp N2>, <&kp SPACE>,
                 /* ) */
                 <&kp RPAR>,
                 /* ⸝ — U+2E1D */
-                <&kp LCTRL>, <&kp LSHIFT>, <&kp U>, <&kp N2>, <&kp E>, <&kp N1>, <&kp D>, <&kp SPACE>,
+                <&kp LC(LS(U))>, <&kp U>, <&kp N2>, <&kp E>, <&kp N1>, <&kp D>, <&kp SPACE>,
                 /* ♡ — U+2661 */
-                <&kp LCTRL>, <&kp LSHIFT>, <&kp U>, <&kp N2>, <&kp N6>, <&kp N6>, <&kp N1>, <&kp SPACE>;
+                <&kp LC(LS(U))>, <&kp N2>, <&kp N6>, <&kp N6>, <&kp N1>, <&kp SPACE>;
         };
     };
 
