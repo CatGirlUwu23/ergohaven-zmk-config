@@ -2,15 +2,10 @@ manifest:
   remotes:
     - name: ergohaven
       url-base: https://github.com/ergohaven
-    - name: zmkfirmware
-      url-base: https://github.com/zmkfirmware
   projects:
     - name: ergohaven-zmk
       remote: ergohaven
       revision: main
       import: config/west.yml
-    - name: zmk-unicode
-      remote: zmkfirmware
-      revision: main
   self:
     path: config
