@@ -67,7 +67,7 @@
             #binding-cells = <0>;
             bindings = 
                 /* ⸜ — U+2E1C */
-                <&kp LC(LS(U2))>, <&kp N2>, <&kp E>, <&kp N1>, <&kp C>, <&kp SPACE>,
+                <&kp LC(LS(U))>, <&kp N2>, <&kp E>, <&kp N1>, <&kp C>, <&kp SPACE>,
                 /* ( */
                 <&kp LPAR>,
                 /* ｡ — U+FF61 */
