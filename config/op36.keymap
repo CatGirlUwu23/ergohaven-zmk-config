@@ -73,17 +73,24 @@
             #binding-cells = <0>;
             wait-ms = <10>;
             bindings = 
-                <¯o_press &kp LCTRL &kp LSHIFT>, <&kp U>, <¯o_release &kp LCTRL &kp LSHIFT>, <&kp N2>, <&kp E>, <&kp N1>, <&kp C>, <&kp SPACE>,
+                /* ⸜ */
+                <&kp LC(LS(U))>, <&kp N2>, <&kp E>, <&kp N1>, <&kp C>, <&kp SPACE>,
+                /* ( */
                 <&kp LPAR>,
-                <¯o_press &kp LCTRL &kp LSHIFT>, <&kp U>, <¯o_release &kp LCTRL &kp LSHIFT>, <&kp F>, <&kp F>, <&kp N6>, <&kp N1>, <&kp SPACE>,
-                <¯o_press &kp LCTRL &kp LSHIFT>, <&kp U>, <¯o_release &kp LCTRL &kp LSHIFT>, <&kp N0>, <&kp N2>, <&kp C>, <&kp N3>, <&kp SPACE>,
-                <&kp SPACE>,
-                <¯o_press &kp LCTRL &kp LSHIFT>, <&kp U>, <¯o_release &kp LCTRL &kp LSHIFT>, <&kp N1>, <&kp D>, <&kp N5>, <&kp N5>, <&kp SPACE>,
-                <&kp SPACE>,
-                <¯o_press &kp LCTRL &kp LSHIFT>, <&kp U>, <¯o_release &kp LCTRL &kp LSHIFT>, <&kp N0>, <&kp N2>, <&kp C>, <&kp N2>, <&kp SPACE>,
+                /* ｡ */
+                <&kp LC(LS(U))>, <&kp F>, <&kp F>, <&kp N6>, <&kp N1>, <&kp SPACE>,
+                /* ˃ */
+                <&kp LC(LS(U))>, <&kp N0>, <&kp N2>, <&kp C>, <&kp N3>, <&kp SPACE>,
+                /* ᵕ (без пробелов до и после) */
+                <&kp LC(LS(U))>, <&kp N1>, <&kp D>, <&kp N5>, <&kp N5>, <&kp SPACE>,
+                /* ˂ */
+                <&kp LC(LS(U))>, <&kp N0>, <&kp N2>, <&kp C>, <&kp N2>, <&kp SPACE>,
+                /* ) */
                 <&kp RPAR>,
-                <¯o_press &kp LCTRL &kp LSHIFT>, <&kp U>, <¯o_release &kp LCTRL &kp LSHIFT>, <&kp N2>, <&kp E>, <&kp N1>, <&kp D>, <&kp SPACE>,
-                <¯o_press &kp LCTRL &kp LSHIFT>, <&kp U>, <¯o_release &kp LCTRL &kp LSHIFT>, <&kp N2>, <&kp N6>, <&kp N6>, <&kp N1>, <&kp SPACE>;
+                /* ⸝ */
+                <&kp LC(LS(U))>, <&kp N2>, <&kp E>, <&kp N1>, <&kp D>, <&kp SPACE>,
+                /* ♡ */
+                <&kp LC(LS(U))>, <&kp N2>, <&kp N6>, <&kp N6>, <&kp N1>, <&kp SPACE>;
         };
     };
 
