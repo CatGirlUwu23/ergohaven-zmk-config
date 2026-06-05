@@ -65,38 +65,14 @@
         test_heart: test_heart {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LCTRL>, <&kp LSHIFT>, <&kp U>,
-                       <&kp N2>, <&kp N6>, <&kp N6>, <&kp N1>,
-                       <&kp SPACE>;
+            bindings = <&kp LCTRL &kp LSHIFT &kp U &kp N2 &kp N6 &kp N6 &kp N1 &kp SPACE>;
         };
 
         kaomoji_hug: kaomoji_hug {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <10>;
-            bindings = 
-                /* ⸜ */
-                <&kp LC(LS(U))>, <&kp N2>, <&kp E>, <&kp N1>, <&kp C>, <&kp SPACE>,
-                /* ( */
-                <&kp LPAR>,
-                /* ｡ */
-                <&kp LC(LS(U))>, <&kp F>, <&kp F>, <&kp N6>, <&kp N1>, <&kp SPACE>,
-                /* ˃ */
-                <&kp LC(LS(U))>, <&kp N0>, <&kp N2>, <&kp C>, <&kp N3>, <&kp SPACE>,
-                /* пробел */
-                <&kp SPACE>,
-                /* ᵕ — 5-значный символ, нужна пауза перед ним */
-                <&kp LC(LS(U))>, <&macro_wait 5>, <&kp N1>, <&kp D>, <&kp N5>, <&kp N5>, <&kp SPACE>,
-                /* пробел */
-                <&kp SPACE>,
-                /* ˂ */
-                <&kp LC(LS(U))>, <&kp N0>, <&kp N2>, <&kp C>, <&kp N2>, <&kp SPACE>,
-                /* ) */
-                <&kp RPAR>,
-                /* ⸝ */
-                <&kp LC(LS(U))>, <&kp N2>, <&kp E>, <&kp N1>, <&kp D>, <&kp SPACE>,
-                /* ♡ */
-                <&kp LC(LS(U))>, <&kp N2>, <&kp N6>, <&kp N6>, <&kp N1>, <&kp SPACE>;
+            bindings = <&kp LC(LS(U)) &kp N2 &kp E &kp N1 &kp C &kp SPACE &kp LPAR &kp LC(LS(U)) &kp F &kp F &kp N6 &kp N1 &kp SPACE &kp LC(LS(U)) &kp N0 &kp N2 &kp C &kp N3 &kp SPACE &kp SPACE &kp LC(LS(U)) &kp N1 &kp D &kp N5 &kp N5 &kp SPACE &kp SPACE &kp LC(LS(U)) &kp N0 &kp N2 &kp C &kp N2 &kp SPACE &kp RPAR &kp LC(LS(U)) &kp N2 &kp E &kp N1 &kp D &kp SPACE &kp LC(LS(U)) &kp N2 &kp N6 &kp N6 &kp N1 &kp SPACE>;
         };
     };
 
@@ -127,10 +103,10 @@
 
         sym {
             bindings = <
-  &kp LESS_THAN         &kp GREATER_THAN  &kp POUND   &kp RU_NUMERO    &kp CARET                           &kp PERCENT   &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp EQUAL
-  &kp NON_US_BACKSLASH  &kp SLASH         &kp PIPE    &kp UNDERSCORE   &kaomoji_hug                        &kp ASTERISK  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp PLUS
-  &kp TILDE             &kp AMPERSAND     &kp DOLLAR  &kp AT_SIGN      &test_heart                         &none         &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp MINUS
-                                                      &kp EXCLAMATION  &mo 3        &kp QUESTION    &mail  &tog 2        &kp KP_NUMBER_0
+  &kp LESS_THAN         &kp GREATER_THAN  &kp POUND   &kp RU_NUMERO    &kp CARET                            &kp PERCENT   &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp EQUAL
+  &kp NON_US_BACKSLASH  &kp SLASH         &kp PIPE    &kp UNDERSCORE   &kaomoji_hug                         &kp ASTERISK  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp PLUS
+  &kp TILDE             &kp AMPERSAND     &kp DOLLAR  &kp AT_SIGN      &test_heart                          &none         &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp MINUS
+                                                      &kp EXCLAMATION  &mo 3         &kp QUESTION    &mail  &tog 2        &kp KP_NUMBER_0
             >;
 
             display-name = "Symbols";
