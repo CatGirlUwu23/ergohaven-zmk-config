@@ -72,18 +72,7 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <10>;
-            bindings = 
-                <¯o_press &kp LCTRL &kp LSHIFT>, <&kp U>, <¯o_release &kp LCTRL &kp LSHIFT>, <&kp N2>, <&kp E>, <&kp N1>, <&kp C>, <&kp SPACE>,
-                <&kp LPAR>,
-                <¯o_press &kp LCTRL &kp LSHIFT>, <&kp U>, <¯o_release &kp LCTRL &kp LSHIFT>, <&kp F>, <&kp F>, <&kp N6>, <&kp N1>, <&kp SPACE>,
-                <¯o_press &kp LCTRL &kp LSHIFT>, <&kp U>, <¯o_release &kp LCTRL &kp LSHIFT>, <&kp N0>, <&kp N2>, <&kp C>, <&kp N3>, <&kp SPACE>,
-                <&kp SPACE>,
-                <¯o_press &kp LCTRL &kp LSHIFT>, <&kp U>, <¯o_release &kp LCTRL &kp LSHIFT>, <&kp N1>, <&kp D>, <&kp N5>, <&kp N5>, <&kp SPACE>,
-                <&kp SPACE>,
-                <¯o_press &kp LCTRL &kp LSHIFT>, <&kp U>, <¯o_release &kp LCTRL &kp LSHIFT>, <&kp N0>, <&kp N2>, <&kp C>, <&kp N2>, <&kp SPACE>,
-                <&kp RPAR>,
-                <¯o_press &kp LCTRL &kp LSHIFT>, <&kp U>, <¯o_release &kp LCTRL &kp LSHIFT>, <&kp N2>, <&kp E>, <&kp N1>, <&kp D>, <&kp SPACE>,
-                <¯o_press &kp LCTRL &kp LSHIFT>, <&kp U>, <¯o_release &kp LCTRL &kp LSHIFT>, <&kp N2>, <&kp N6>, <&kp N6>, <&kp N1>, <&kp SPACE>;
+            bindings = <&kp LCTRL &kp LSHIFT &kp U &kp LCTRL &kp LSHIFT &kp N2 &kp E &kp N1 &kp C &kp SPACE &kp LPAR &kp LCTRL &kp LSHIFT &kp U &kp LCTRL &kp LSHIFT &kp F &kp F &kp N6 &kp N1 &kp SPACE &kp LCTRL &kp LSHIFT &kp U &kp LCTRL &kp LSHIFT &kp N0 &kp N2 &kp C &kp N3 &kp SPACE &kp SPACE &kp LCTRL &kp LSHIFT &kp U &kp LCTRL &kp LSHIFT &kp N1 &kp D &kp N5 &kp N5 &kp SPACE &kp SPACE &kp LCTRL &kp LSHIFT &kp U &kp LCTRL &kp LSHIFT &kp N0 &kp N2 &kp C &kp N2 &kp SPACE &kp RPAR &kp LCTRL &kp LSHIFT &kp U &kp LCTRL &kp LSHIFT &kp N2 &kp E &kp N1 &kp D &kp SPACE &kp LCTRL &kp LSHIFT &kp U &kp LCTRL &kp LSHIFT &kp N2 &kp N6 &kp N6 &kp N1 &kp SPACE>;
         };
     };
 
@@ -92,10 +81,10 @@
 
         base {
             bindings = <
-  &kp Q  &kp W  &kp E  &kp R           &kp T                                  &kp Y   &kp U          &kp I  &kp O  &kp P
-  &kp A  &kp S  &kp D  &kp F           &kp G                                  &kp H   &kp J          &kp K  &kp L  &none
-  &kp Z  &kp X  &kp C  &kp V           &kp B                                  &kp N   &kp M          &none  &none  &none
-                       &kp LEFT_SHIFT  &tog 2  &kp SPACE    &kp LEFT_CONTROL  &tog 3  &kp BACKSPACE
+  &kp Q  &kp W  &kp E  &kp R           &kp T                                 &kp Y  &kp U          &kp I  &kp O  &kp P
+  &kp A  &kp S  &kp D  &kp F           &kp G                                 &kp H  &kp J          &kp K  &kp L  &none
+  &kp Z  &kp X  &kp C  &kp V           &kp B                                 &kp N  &kp M          &none  &none  &none
+                       &kp LEFT_SHIFT  &mo 1  &kp SPACE    &kp LEFT_CONTROL  &mo 2  &kp BACKSPACE
             >;
 
             display-name = "Base";
@@ -106,7 +95,7 @@
   &kp CAPSLOCK          &kp LEFT_ALT           &kp DELETE        &kp TAB         &kp ENTER                                        &kp GRAVE          &mkp LCLK       &mkp MCLK       &mkp RCLK        &kp LEFT_GUI
   &kp LEFT_CONTROL      &kp LEFT_SHIFT         &kp LEFT          &kp UP          &kp RIGHT_ARROW                                  &kp DOUBLE_QUOTES  &mmv MOVE_LEFT  &mmv MOVE_UP    &mmv MOVE_RIGHT  &kp SEMICOLON
   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACKET  &kp DOWN_ARROW  &kp RIGHT_BRACKET                                &kp APOSTROPHE     &msc SCRL_UP    &mmv MOVE_DOWN  &msc SCRL_DOWN   &kp COLON
-                                                                 &kp LEFT_BRACE  &tog 2             &kp RIGHT_BRACE    &kp COMMA  &mo 3              &kp PERIOD
+                                                                 &kp LEFT_BRACE  &mo 1              &kp RIGHT_BRACE    &kp COMMA  &mo 3              &kp PERIOD
             >;
 
             display-name = "Nav";
@@ -117,7 +106,7 @@
   &kp LESS_THAN         &kp GREATER_THAN  &kp POUND   &kp RU_NUMERO    &kp CARET                            &kp PERCENT   &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp EQUAL
   &kp NON_US_BACKSLASH  &kp SLASH         &kp PIPE    &kp UNDERSCORE   &kaomoji_hug                         &kp ASTERISK  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp PLUS
   &kp TILDE             &kp AMPERSAND     &kp DOLLAR  &kp AT_SIGN      &test_heart                          &none         &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp MINUS
-                                                      &kp EXCLAMATION  &mo 3         &kp QUESTION    &mail  &tog 3        &kp KP_NUMBER_0
+                                                      &kp EXCLAMATION  &mo 3         &kp QUESTION    &mail  &mo 2         &kp KP_NUMBER_0
             >;
 
             display-name = "Symbols";
