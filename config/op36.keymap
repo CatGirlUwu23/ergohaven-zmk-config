@@ -9,12 +9,6 @@
 #include "zmk-helpers/helper.h"
 #include "zmk-helpers/unicode-chars/german.dtsi"
 
-&mt {
-    quick-tap-ms = <200>;
-    flavor = "tap-preferred";
-    require-prior-idle-ms = <125>;
-};
-
 / {
     behaviors {
         hml: home_row_mod_left {
@@ -66,12 +60,10 @@
             label = "MAIL";
         };
 
-        kaomoji_hug: kaomoji_hug {
+        test_heart: test_heart {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            wait-ms = <10>;
-            bindings = 
-                <&sk LC(LS(U))>, <&kp N2>, <&kp N6>, <&kp N6>, <&kp N1>, <&kp SPACE>;
+            bindings = <&kp LCTRL &kp LSHIFT &kp U &kp N2 &kp N6 &kp N6 &kp N1 &kp SPACE>;
         };
     };
 
