@@ -71,7 +71,7 @@
         kaomoji_hug: kaomoji_hug {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            wait-ms = <10>;
+            wait-ms = <50>;
             bindings = 
                 /* ⸜ */
                 <&sk LC(LS(U))>, <&kp N2>, <&kp E>, <&kp N1>, <&kp C>, <&kp SPACE>,
