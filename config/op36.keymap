@@ -66,10 +66,12 @@
             label = "MAIL";
         };
 
-        test_heart: test_heart {
+        kaomoji_hug: kaomoji_hug {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LCTRL &kp LSHIFT &kp U &kp N2 &kp N6 &kp N6 &kp N1 &kp SPACE>;
+            wait-ms = <10>;
+            bindings = 
+                <&sk LC(LS(U))>, <&kp N2>, <&kp N6>, <&kp N6>, <&kp N1>, <&kp SPACE>;
         };
     };
 
