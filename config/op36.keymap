@@ -71,25 +71,8 @@
         kaomoji_hug: kaomoji_hug {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            wait-ms = <50>;
+            wait-ms = <10>;
             bindings = 
-                /* ⸜ */
-                <&sk LC(LS(U))>, <&kp N2>, <&kp E>, <&kp N1>, <&kp C>, <&kp SPACE>,
-                /* ( */
-                <&kp LPAR>,
-                /* ｡ */
-                <&sk LC(LS(U))>, <&kp F>, <&kp F>, <&kp N6>, <&kp N1>, <&kp SPACE>,
-                /* ˃ */
-                <&sk LC(LS(U))>, <&kp N0>, <&kp N2>, <&kp C>, <&kp N3>, <&kp SPACE>,
-                /* ᵕ */
-                <&sk LC(LS(U))>, <&kp N1>, <&kp D>, <&kp N5>, <&kp N5>, <&kp SPACE>,
-                /* ˂ */
-                <&sk LC(LS(U))>, <&kp N0>, <&kp N2>, <&kp C>, <&kp N2>, <&kp SPACE>,
-                /* ) */
-                <&kp RPAR>,
-                /* ⸝ */
-                <&sk LC(LS(U))>, <&kp N2>, <&kp E>, <&kp N1>, <&kp D>, <&kp SPACE>,
-                /* ♡ */
                 <&sk LC(LS(U))>, <&kp N2>, <&kp N6>, <&kp N6>, <&kp N1>, <&kp SPACE>;
         };
     };
