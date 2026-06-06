@@ -1,16 +1,13 @@
-#include "keys_ru.h"
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/pointing.h>
-#include "helper.h"
-#define HOST_OS 1 // 1 = Linux
 
-ZMK_UNICODE_PAIR(de_ae,   N0, N0,  E, N4,   N0, N0,  C, N4 )
-ZMK_UNICODE_PAIR(de_oe,   N0, N0,  F, N6,   N0, N0,  D, N6 )
-ZMK_UNICODE_PAIR(de_ue,   N0, N0,  F,  C,   N0, N0,  D,  C )
-ZMK_UNICODE_SINGLE(de_eszett,   N0, N0,  D,  F )
+// Подключаем модуль с хелперами и немецкими символами
+#define HOST_OS 1 // 1 = Linux
+#include "zmk-helpers/helper.h"
+#include "zmk-helpers/unicode-chars/german.dtsi"
 
 &mt {
     quick-tap-ms = <200>;
@@ -74,14 +71,6 @@ ZMK_UNICODE_SINGLE(de_eszett,   N0, N0,  D,  F )
             #binding-cells = <0>;
             bindings = <&kp LCTRL &kp LSHIFT &kp U &kp N2 &kp N6 &kp N6 &kp N1 &kp SPACE>;
         };
-
-        kaomoji_hug: kaomoji_hug {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            wait-ms = <10>;
-            bindings = 
-                <&sk LC(LS(U))>, <&kp N2>, <&kp N6>, <&kp N6>, <&kp N1>, <&kp SPACE>;
-        };
     };
 
     keymap {
@@ -112,8 +101,8 @@ ZMK_UNICODE_SINGLE(de_eszett,   N0, N0,  D,  F )
         sym {
             bindings = <
   &kp LESS_THAN         &kp GREATER_THAN  &kp POUND   &kp RU_NUMERO    &kp CARET                            &kp PERCENT   &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp EQUAL
-  &kp NON_US_BACKSLASH  &kp SLASH         &kp PIPE    &kp UNDERSCORE   &kaomoji_hug                         &kp ASTERISK  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp PLUS
-  &kp TILDE             &kp AMPERSAND     &kp DOLLAR  &kp AT_SIGN      &test_heart                          &none         &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp MINUS
+  &kp NON_US_BACKSLASH  &kp SLASH         &kp PIPE    &kp UNDERSCORE   &test_heart                          &kp ASTERISK  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp PLUS
+  &kp TILDE             &kp AMPERSAND     &kp DOLLAR  &kp AT_SIGN      &none                                &none         &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp MINUS
                                                       &kp EXCLAMATION  &mo 3         &kp QUESTION    &mail  &mo 2         &kp KP_NUMBER_0
             >;
 
