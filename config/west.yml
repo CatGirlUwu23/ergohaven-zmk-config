@@ -4,6 +4,8 @@ manifest:
       url-base: https://github.com/zmkfirmware
     - name: urob
       url-base: https://github.com/urob
+    - name: ergohaven
+      url-base: https://github.com/ergohaven
   projects:
     - name: zmk
       remote: zmkfirmware
@@ -11,6 +13,9 @@ manifest:
       import: app/west.yml
     - name: zmk-helpers
       remote: urob
+      revision: main
+    - name: ergohaven-zmk
+      remote: ergohaven
       revision: main
   self:
     path: config
