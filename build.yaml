@@ -2,7 +2,7 @@
 include:
 
   - board: ergohaven
-    shield: op36_left
+    shield: op36_right
     keymap: op36_ruen
     snippet: studio-rpc-usb-uart
     cmake-args: -DCONFIG_ZMK_STUDIO=y
