@@ -161,10 +161,10 @@
 
         en {
             bindings = <
-  &kp Q        &kp W        &kp E         &kp R           &kp T                                 &kp Y  &kp U          &kp I         &kp O        &kp P
-  &hml LGUI A  &hml LALT S  &hml LSHFT D  &hml LCTRL F    &kp G                                 &kp H  &hmr RCTRL J   &hmr RSHFT K  &hmr LALT L  &de_eszett
-  &kp Z        &kp X        &kp C         &kp V           &kp B                                 &kp N  &kp M          &de_ae        &de_oe       &de_ue
-                                          &kp LEFT_SHIFT  &mo 2  &kp SPACE    &kp LEFT_CONTROL  &mo 4  &kp BACKSPACE
+  &kp Q        &kp W        &kp E         &kp R           &kp T                                  &kp Y   &kp U          &kp I         &kp O        &kp P
+  &hml LGUI A  &hml LALT S  &hml LSHFT D  &hml LCTRL F    &kp G                                  &kp H   &hmr RCTRL J   &hmr RSHFT K  &hmr LALT L  &de_eszett
+  &kp Z        &kp X        &kp C         &kp V           &kp B                                  &kp N   &kp M          &de_ae        &de_oe       &de_ue
+                                          &kp LEFT_SHIFT  &tog 2  &kp SPACE    &kp LEFT_CONTROL  &tog 4  &kp BACKSPACE
             >;
 
             display-name = "Base";
@@ -175,7 +175,7 @@
   &kp RU_CYRILLIC_SHORT_I   &kp RU_CYRILLIC_TSE         &kp RU_CYRILLIC_U          &kp RU_CYRILLIC_KA        &kp RU_CYRILLIC_IE                                 &kp RU_CYRILLIC_EN  &kp RU_CYRILLIC_GHE        &kp RU_CYRILLIC_SHA        &kp RU_CYRILLIC_SHCHA     &kp RU_CYRILLIC_ZE
   &hml LGUI RU_CYRILLIC_EF  &hml LALT RU_CYRILLIC_YERU  &hml LSHFT RU_CYRILLIC_VE  &hml LCTRL RU_CYRILLIC_A  &kp RU_CYRILLIC_PE                                 &kp RU_CYRILLIC_ER  &hmr RCTRL RU_CYRILLIC_O   &hmr RSHFT RU_CYRILLIC_EL  &hmr LALT RU_CYRILLIC_DE  &kp RU_CYRILLIC_ZHE
   &kp RU_CYRILLIC_YA        &kp RU_CYRILLIC_CHE         &kp RU_CYRILLIC_ES         &kp RU_CYRILLIC_EM        &kp RU_CYRILLIC_I                                  &kp RU_CYRILLIC_TE  &kp RU_CYRILLIC_SOFT_SIGN  &kp RU_CYRILLIC_BE         &kp RU_CYRILLIC_YU        &kp RU_CYRILLIC_E
-                                                                                   &kp LEFT_SHIFT            &mo 3               &kp SPACE    &kp LEFT_CONTROL  &mo 5               &kp BACKSPACE
+                                                                                   &kp LEFT_SHIFT            &tog 3              &kp SPACE    &kp LEFT_CONTROL  &tog 5              &kp BACKSPACE
             >;
 
             display-name = "Ru";
@@ -186,7 +186,7 @@
   &kp CAPSLOCK          &kp LEFT_ALT           &kp DELETE        &kp TAB         &kp ENTER                                        &kp GRAVE          &mkp LCLK       &mkp MCLK       &mkp RCLK        &kp LEFT_GUI
   &kp LEFT_CONTROL      &kp LEFT_SHIFT         &kp LEFT          &kp UP          &kp RIGHT_ARROW                                  &kp DOUBLE_QUOTES  &mmv MOVE_LEFT  &mmv MOVE_UP    &mmv MOVE_RIGHT  &kp SEMICOLON
   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACKET  &kp DOWN_ARROW  &kp RIGHT_BRACKET                                &kp APOSTROPHE     &msc SCRL_UP    &mmv MOVE_DOWN  &msc SCRL_DOWN   &kp COLON
-                                                                 &kp LEFT_BRACE  &none              &kp RIGHT_BRACE    &kp COMMA  &mo 6              &kp PERIOD
+                                                                 &kp LEFT_BRACE  &tog 2             &kp RIGHT_BRACE    &kp COMMA  &mo 6              &kp PERIOD
             >;
 
             display-name = "Symbols";
@@ -197,7 +197,7 @@
   &kp CAPSLOCK          &kp LEFT_ALT           &kp DELETE        &kp TAB         &kp ENTER                                        &en GRAVE          &mkp LCLK       &mkp MCLK       &mkp RCLK        &kp LEFT_GUI
   &en LEFT_CONTROL      &kp LEFT_SHIFT         &kp LEFT          &kp UP          &kp RIGHT_ARROW                                  &en DOUBLE_QUOTES  &mmv MOVE_LEFT  &mmv MOVE_UP    &mmv MOVE_RIGHT  &en SEMICOLON
   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &en LEFT_BRACKET  &kp DOWN_ARROW  &en RIGHT_BRACKET                                &en APOSTROPHE     &msc SCRL_UP    &mmv MOVE_DOWN  &msc SCRL_DOWN   &en COLON
-                                                                 &en LEFT_BRACE  &none              &en RIGHT_BRACE    &en COMMA  &mo 6              &en PERIOD
+                                                                 &en LEFT_BRACE  &tog 3             &en RIGHT_BRACE    &en COMMA  &mo 6              &en PERIOD
             >;
 
             display-name = "Symbols";
@@ -208,7 +208,7 @@
   &kp LESS_THAN         &kp GREATER_THAN  &kp POUND   &kp RU_NUMERO    &kp CARET                         &kp PERCENT   &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp EQUAL
   &kp NON_US_BACKSLASH  &kp SLASH         &kp PIPE    &kp UNDERSCORE   &tire                             &kp ASTERISK  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp PLUS
   &kp TILDE             &kp AMPERSAND     &kp DOLLAR  &kp AT_SIGN      &ps                               &heart        &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp MINUS
-                                                      &kp EXCLAMATION  &mo 6      &kp QUESTION    &mail  &none         &kp KP_NUMBER_0
+                                                      &kp EXCLAMATION  &mo 6      &kp QUESTION    &mail  &tog 4        &kp KP_NUMBER_0
             >;
 
             display-name = "Nav";
@@ -220,7 +220,7 @@
   &en LESS_THAN         &en GREATER_THAN  &en POUND   &kp RU_NUMERO    &en CARET                         &kp PERCENT   &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp EQUAL
   &en NON_US_BACKSLASH  &en SLASH         &en PIPE    &kp UNDERSCORE   &tire                             &kp ASTERISK  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp PLUS
   &en TILDE             &en AMPERSAND     &en DOLLAR  &en AT_SIGN      &ps                               &heart        &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp MINUS
-                                                      &kp EXCLAMATION  &mo 6      &en QUESTION    &mail  &none         &kp KP_NUMBER_0
+                                                      &kp EXCLAMATION  &mo 6      &en QUESTION    &mail  &tog 5        &kp KP_NUMBER_0
             >;
         };
 
